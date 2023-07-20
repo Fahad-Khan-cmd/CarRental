@@ -34,7 +34,8 @@ public class Main {
 //
 //            System.out.println(customerDAO.getAll());
           // LogInUI obj = new LogInUI();
-            new HomeUi();
+           // new HomeUi();
+           System.out.println("My name is Fahad");
         }
 
 }
