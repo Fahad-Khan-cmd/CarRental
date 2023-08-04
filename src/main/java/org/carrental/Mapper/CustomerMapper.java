@@ -34,6 +34,11 @@ public class CustomerMapper implements IMapper<Customer> {
     }
 
     @Override
+    public List<Customer> resultSetToListForDropDown(ResultSet rs) throws SQLException {
+        return null;
+    }
+
+    @Override
     public Customer resultSetToObject(ResultSet rs) throws SQLException {
         if (rs.next()) {
             return Customer.builder()

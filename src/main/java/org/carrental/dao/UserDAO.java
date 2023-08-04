@@ -2,8 +2,7 @@ package org.carrental.dao;
 
 import org.carrental.Mapper.IMapper;
 import org.carrental.Mapper.UserMapper;
-import org.carrental.domain.Customer;
-import org.carrental.domain.User;
+import org.carrental.domain.*;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -35,6 +34,16 @@ public class UserDAO extends BaseDAO implements CRUD<User> {
     }
 
     @Override
+    public void insert(Vehicle obj) {
+
+    }
+
+    @Override
+    public void insert(Booking obj) {
+
+    }
+
+    @Override
     public List<User> getAll() {
         return null;
     }
@@ -50,7 +59,53 @@ public class UserDAO extends BaseDAO implements CRUD<User> {
     }
 
     @Override
+    public void update(Customer obj) {
+
+    }
+
+    @Override
+    public void update(Customer obj, Integer id) {
+
+    }
+
+    @Override
+    public void update(Vehicle obj, Integer id) {
+
+    }
+
+    @Override
     public void deleteById(Long id) {
 
     }
+
+    @Override
+    public List<Customer> getByName(String name) {
+        return null;
+    }
+
+    @Override
+    public void update(User customer) {
+
+
+    }
+
+    @Override
+    public void update(VehicleOwner obj) {
+
+    }
+
+    @Override
+    public void update(VehicleOwner obj, Integer id) {
+
+    }
+
+    @Override
+    public void update(Booking obj, Integer id) {
+
+    }
+
+//    @Override
+//    public void update(Customer customer) {
+//
+//    }
 }

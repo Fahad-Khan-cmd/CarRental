@@ -14,7 +14,12 @@ public class UserMapper implements IMapper<User> {
     public static final String PASS = "pass";
 
     @Override
-    public List<Customer> resultSetToList(ResultSet rs) throws SQLException {
+    public List<User> resultSetToList(ResultSet rs) throws SQLException {
+        return null;
+    }
+
+    @Override
+    public List<User> resultSetToListForDropDown(ResultSet rs) throws SQLException {
         return null;
     }
 
